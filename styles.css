@@ -1,0 +1,283 @@
+@font-face {
+    font-family: handiHandFont;
+    src: url(fonts/clochard/Clochard.otf);
+}
+
+
+body {
+	background-color: #6A6A6A;
+	font-size: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+}
+#thead{
+	width: 100%;
+	height: 16em;
+	background-image: url("img/wood.png");
+	top: 0;
+	left: 0;
+	border-bottom: solid #222222 1px; 
+	box-shadow: 0px 2px 2px;
+}
+
+#content {
+	float: left;
+	width: 86%;
+	margin-right: 7%;
+	margin-left: 7%;
+	margin-bottom: 13em;
+	padding-bottom: 8em;
+	background-color: white;
+	font-family: verdana, sans-serif;
+	border-radius: 1em;
+	box-shadow: -1px -1px 2px #222222;
+}
+#header {
+	float: left;
+	width: 100%;
+	background-image: url("img/wood.png");
+	text-align: center;
+	padding-top: 1.5em;
+	font-family: verdana, sans-serif;
+	font-size: 120%;
+	margin-bottom: 0px;
+}
+#header h1 {
+	font-size: 260%;
+	font-family: handIHandFont;
+	color: #111111;
+}
+#header h3 {
+	color: white;
+	text-shadow: 2px 2px 2px #000000, 0 0 8px #000000, 0 0 4px #000000, 0 0 4px #000000;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+#ghih {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+	background-color: #AAAAAA;
+	border-radius: 4px;
+	box-shadow: 0 0 6px;
+	background-image: url("img/plate2.png");
+}
+#icon {
+	margin-left: 0.3em;
+	width: 0.8em;
+	height: 0.8em;
+}
+
+#info-img-container {
+	float: left;
+	width: 100%;
+	font: 1em verdana, sans-serif;
+	line-height: 200%;
+	margin-top: 3em;
+}
+#maj-lena-img-sm{
+	display: none;
+}
+
+#maj {
+	float: left;
+	width: 28%;
+	margin-top: 12em;
+	text-align: center;
+}
+
+#maj-lena-img {
+	float: left;
+	width: 44%;
+	text-align: center;
+	font-size: 1.3em;
+	/*text-decoration: underline;*/
+}
+#lena {
+	float: left;
+	width: 28%;
+	margin-top: 12em;
+	text-align: center;
+}
+.img {
+	width: 100%;
+	margin-top: 1em;
+	border: solid 1px #555555;
+	box-shadow: 0 0 2px #AAAAAA;
+}
+#info-container {
+	float: left;
+	width: 100%;
+/*	text-align: justify;*/
+	font: 1em verdana, sans-serif;
+	line-height: 150%;
+	margin-top: 1em;
+}
+#info {
+	float: left;
+	width: 44%;
+	margin-left: 28%;
+}
+#contact-container {
+	float: left;
+	width: 100%;
+	font: 1em verdana, sans-serif;
+	line-height: 200%;
+	margin-top: 6em;
+}
+#maying {
+	float: left;
+	width: 34%;
+	margin-left: 10%;
+	background-color: #F9F9F9;
+	min-height: 28em;
+	border-radius: 1em;
+}
+
+#uls {
+	float: right;
+	margin-right: 10%;
+	width: 34%;
+	background-color: #F9F9F9;
+	min-height: 28em;
+	border-radius: 1em;
+}
+
+.contact-text {
+	margin-left: 4em;
+	margin-right: 4em;
+	margin-top: 3em;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 18em;
+	background-color: #222222;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    #content {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    #maying {
+		width: 44%;
+		margin-left: 4%;
+	}
+
+	#uls {
+		margin-right: 4%;
+		width: 44%;
+	}
+	#footer {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 786px) {
+
+	#header {
+		font-size: 100%;
+	}
+
+	#info-img-container {
+		margin-top: 0px;
+	}
+    #maj-lena-img {
+    	display: none;
+    }
+    .img {
+    	box-shadow: none;
+    	border: none;
+    }
+    #maj-lena-img-sm{
+    	float: left;
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 1.3em;
+		margin-top: 0px;
+	}
+	#maj-lena-img-sm p {
+		padding-top: 2em;
+	}
+	#maj-lena-img-sm img {
+		margin-top: 0em;
+	}
+    #maj {
+    	width: 100%;
+    	margin-top: 0em;
+    }
+    #lena {
+    	width: 100%;
+    	margin-top: 0em;
+    }
+    #info {
+		width: 80%;
+		margin-left: 10%;
+		text-align: justify;
+	}
+
+	.contact-text {
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-top: 3em;
+	}
+
+}
+
+@media only screen and (max-width: 560px) {
+
+	#icon {
+		display: none;
+	}
+
+	#maying {
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: 1em;
+	}
+
+	#uls {
+		margin-right: 5%;
+		width: 90%;
+	}
+
+}
+
+@media only screen and (max-width: 340px) {
+	#header h1 {
+		font-size: 220%;
+	}
+}
